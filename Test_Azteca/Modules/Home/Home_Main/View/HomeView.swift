@@ -10,30 +10,40 @@ import UIKit
 class HomeView: UIViewController, Storyboarded {
     
     var presenter: HomePresenterProtocol?
-
+    @IBOutlet weak var UserTbl: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        build()
     }
     
+    func build(){
+        UserTbl.delegate = self
+        UserTbl.dataSource = self
+        
+        let nameCell = UINib(nibName: NameTVC.id, bundle: nil)
+        UserTbl.register(nameCell, forCellReuseIdentifier: NameTVC.id)
+        
+        let photoCell = UINib(nibName: PhotoTVC.id, bundle: nil)
+        UserTbl.register(photoCell, forCellReuseIdentifier: PhotoTVC.id)
+        
+        let graphicsCell = UINib(nibName: GraphicsTVC.id, bundle: nil)
+        UserTbl.register(graphicsCell, forCellReuseIdentifier: GraphicsTVC.id)
+        
+    }
 
+    //No MVP The VC is Simple
+    func goToDetailPhoto(){
+        
+        let vc = PhotoView.instantiate(fromStoryboard: .Home)
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.present(vc, animated: true, completion: nil)
+    }
 
 }
 
 extension HomeView : HomeViewProtocol {
-//    func getListPokemon(list: [PokemonModel]) {
-//        isLoading = false
-//
-//        for element in list {
-//            if let _ = dataList.first(where: {$0.id == element.id}){
-//                continue
-//            }
-//            dataList.append(element)
-//            let indexPath = IndexPath(row: dataList.count - 1, section: SectionsTbl.records.rawValue)
-//            PokemonCV.insertItems(at: [indexPath])
-//        }
-//    }
      
 }
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GraphicsTVC" id="qg4-XF-yKN" customClass="GraphicsTVC" customModule="Test_Azteca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qg4-XF-yKN" id="GmJ-gd-Ryc">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graphics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgs-Ac-4IW">
+                        <rect key="frame" x="20" y="11.666666666666664" width="68.333333333333329" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGV-2Q-8QZ">
+                        <rect key="frame" x="271" y="4.6666666666666679" width="99" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Stadistics"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WGV-2Q-8QZ" secondAttribute="trailing" constant="20" id="JJe-DA-qCf"/>
+                    <constraint firstItem="WGV-2Q-8QZ" firstAttribute="centerY" secondItem="GmJ-gd-Ryc" secondAttribute="centerY" id="d3b-mL-KnW"/>
+                    <constraint firstItem="Sgs-Ac-4IW" firstAttribute="centerY" secondItem="GmJ-gd-Ryc" secondAttribute="centerY" id="dUD-L7-GP4"/>
+                    <constraint firstItem="Sgs-Ac-4IW" firstAttribute="leading" secondItem="GmJ-gd-Ryc" secondAttribute="leading" constant="20" id="h5B-XI-d4f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="182" y="33"/>
+        </tableViewCell>
+    </objects>
+</document>

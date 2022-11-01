@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GraphTVC" rowHeight="465" id="Srv-3H-0Sh" customClass="GraphTVC" customModule="Test_Azteca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="465"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Srv-3H-0Sh" id="K91-p8-agT">
+                <rect key="frame" x="0.0" y="0.0" width="507" height="465"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM6-8J-YY8">
+                        <rect key="frame" x="20" y="10" width="467" height="185"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-gD-HUU">
+                        <rect key="frame" x="20" y="205" width="467" height="250"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="xbv-ti-W1l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EM6-8J-YY8" firstAttribute="leading" secondItem="K91-p8-agT" secondAttribute="leading" constant="20" id="C0G-vw-fkC"/>
+                    <constraint firstItem="Dva-gD-HUU" firstAttribute="top" secondItem="EM6-8J-YY8" secondAttribute="bottom" constant="10" id="Lhh-xo-ql8"/>
+                    <constraint firstItem="Dva-gD-HUU" firstAttribute="leading" secondItem="K91-p8-agT" secondAttribute="leading" constant="20" id="PWK-b6-HbZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Dva-gD-HUU" secondAttribute="bottom" constant="10" id="S2U-Ib-VCn"/>
+                    <constraint firstAttribute="trailing" secondItem="Dva-gD-HUU" secondAttribute="trailing" constant="20" id="mI6-sd-MLu"/>
+                    <constraint firstItem="EM6-8J-YY8" firstAttribute="top" secondItem="K91-p8-agT" secondAttribute="top" constant="10" id="ms9-EG-RYZ"/>
+                    <constraint firstAttribute="trailing" secondItem="EM6-8J-YY8" secondAttribute="trailing" constant="20" id="tiu-hy-DY5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="questionLbl" destination="EM6-8J-YY8" id="D7N-fF-WR5"/>
+            </connections>
+            <point key="canvasLocation" x="-93.07692307692308" y="-121.2085308056872"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

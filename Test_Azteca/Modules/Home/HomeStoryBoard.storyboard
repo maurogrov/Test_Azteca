@@ -134,7 +134,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDq-MY-eTv">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9PN-r8-6vy">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="B9p-tW-Yce">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                                        <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9PN-r8-6vy" secondAttribute="bottom" id="1aB-Vv-TvK"/>
+                                    <constraint firstAttribute="trailing" secondItem="9PN-r8-6vy" secondAttribute="trailing" id="ALg-DD-8qd"/>
+                                    <constraint firstItem="B9p-tW-Yce" firstAttribute="centerX" secondItem="XDq-MY-eTv" secondAttribute="centerX" id="I74-no-nuo"/>
+                                    <constraint firstItem="9PN-r8-6vy" firstAttribute="leading" secondItem="XDq-MY-eTv" secondAttribute="leading" id="K8Q-gX-3vl"/>
+                                    <constraint firstItem="9PN-r8-6vy" firstAttribute="top" secondItem="XDq-MY-eTv" secondAttribute="top" id="LXX-lP-HfN"/>
+                                    <constraint firstItem="B9p-tW-Yce" firstAttribute="leading" secondItem="XDq-MY-eTv" secondAttribute="leading" id="m4b-iq-5hV"/>
+                                    <constraint firstItem="B9p-tW-Yce" firstAttribute="top" secondItem="XDq-MY-eTv" secondAttribute="top" id="pDE-2U-SZ7"/>
+                                    <constraint firstItem="B9p-tW-Yce" firstAttribute="centerY" secondItem="XDq-MY-eTv" secondAttribute="centerY" id="sOn-gU-YLx"/>
+                                    <constraint firstAttribute="bottom" secondItem="B9p-tW-Yce" secondAttribute="bottom" id="uw9-T4-bFa"/>
+                                    <constraint firstAttribute="trailing" secondItem="B9p-tW-Yce" secondAttribute="trailing" id="wUB-bW-YV9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D6E-U9-18J"/>
@@ -146,6 +168,10 @@
                             <constraint firstItem="XDq-MY-eTv" firstAttribute="leading" secondItem="D6E-U9-18J" secondAttribute="leading" id="dQ2-ZJ-6gv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graphTbl" destination="9PN-r8-6vy" id="ZxC-uG-4LR"/>
+                        <outlet property="spinerAct" destination="B9p-tW-Yce" id="Rex-mn-cgk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxr-mG-tIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -39,6 +39,11 @@
 		2250BA94291178E900704CD7 /* HomeGraphInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA93291178E900704CD7 /* HomeGraphInteractor.swift */; };
 		2250BA9829117B4A00704CD7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA9729117B4A00704CD7 /* HomeRouter.swift */; };
 		2250BA9A291185EA00704CD7 /* HomeGraphRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA99291185EA00704CD7 /* HomeGraphRemoteDataManager.swift */; };
+		2250BA9D2911901D00704CD7 /* GraphicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA9C2911901D00704CD7 /* GraphicModel.swift */; };
+		2250BAA02911916900704CD7 /* GraphicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA9F2911916900704CD7 /* GraphicService.swift */; };
+		2250BAA32911996A00704CD7 /* GraphTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAA22911996A00704CD7 /* GraphTVC.swift */; };
+		2250BAA52911997A00704CD7 /* GraphTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2250BAA42911997A00704CD7 /* GraphTVC.xib */; };
+		2250BAA729119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAA629119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift */; };
 		76DE711975009E1EB9FA31BD /* Pods_Test_Azteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +82,11 @@
 		2250BA93291178E900704CD7 /* HomeGraphInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphInteractor.swift; sourceTree = "<group>"; };
 		2250BA9729117B4A00704CD7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		2250BA99291185EA00704CD7 /* HomeGraphRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphRemoteDataManager.swift; sourceTree = "<group>"; };
+		2250BA9C2911901D00704CD7 /* GraphicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicModel.swift; sourceTree = "<group>"; };
+		2250BA9F2911916900704CD7 /* GraphicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicService.swift; sourceTree = "<group>"; };
+		2250BAA22911996A00704CD7 /* GraphTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTVC.swift; sourceTree = "<group>"; };
+		2250BAA42911997A00704CD7 /* GraphTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphTVC.xib; sourceTree = "<group>"; };
+		2250BAA629119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeGraphView+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Azteca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F5458336F5E208C5BCD6F4 /* Pods-Test_Azteca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.release.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.release.xcconfig"; sourceTree = "<group>"; };
 		B4619963547386BDDFFF8F4D /* Pods-Test_Azteca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.debug.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +125,7 @@
 		2250BA3E29102C9800704CD7 /* Test_Azteca */ = {
 			isa = PBXGroup;
 			children = (
+				2250BA9E2911915700704CD7 /* Services */,
 				2250BA5E29102E1400704CD7 /* Extensions */,
 				2250BA5429102D3200704CD7 /* Modules */,
 				2250BA3F29102C9800704CD7 /* AppDelegate.swift */,
@@ -238,6 +249,7 @@
 		2250BA882911781F00704CD7 /* Home_Graph */ = {
 			isa = PBXGroup;
 			children = (
+				2250BA9B2911900500704CD7 /* Entity */,
 				2250BA8B2911787700704CD7 /* View */,
 				2250BA8E291178B600704CD7 /* Presenter */,
 				2250BA952911790800704CD7 /* Interactor */,
@@ -249,7 +261,9 @@
 		2250BA8B2911787700704CD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2250BAA12911993800704CD7 /* Components */,
 				2250BA8C2911789A00704CD7 /* HomeGraphView.swift */,
+				2250BAA629119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +292,31 @@
 				2250BA9729117B4A00704CD7 /* HomeRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		2250BA9B2911900500704CD7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA9C2911901D00704CD7 /* GraphicModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2250BA9E2911915700704CD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA9F2911916900704CD7 /* GraphicService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2250BAA12911993800704CD7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2250BAA22911996A00704CD7 /* GraphTVC.swift */,
+				2250BAA42911997A00704CD7 /* GraphTVC.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		2C6DFE338864D0B3B1FA04B7 /* Pods */ = {
@@ -361,6 +400,7 @@
 				2250BA4C29102C9A00704CD7 /* LaunchScreen.storyboard in Resources */,
 				2250BA4929102C9A00704CD7 /* Assets.xcassets in Resources */,
 				2250BA782910387B00704CD7 /* PhotoTVC.xib in Resources */,
+				2250BAA52911997A00704CD7 /* GraphTVC.xib in Resources */,
 				2250BA5729102D5F00704CD7 /* HomeStoryBoard.storyboard in Resources */,
 				2250BA4729102C9800704CD7 /* Main.storyboard in Resources */,
 				2250BA742910345D00704CD7 /* NameTVC.xib in Resources */,
@@ -418,8 +458,12 @@
 			files = (
 				2250BA94291178E900704CD7 /* HomeGraphInteractor.swift in Sources */,
 				2250BA8A2911784300704CD7 /* HomeGraphWireFrame.swift in Sources */,
+				2250BA9D2911901D00704CD7 /* GraphicModel.swift in Sources */,
+				2250BAA729119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift in Sources */,
 				2250BA4429102C9800704CD7 /* ViewController.swift in Sources */,
+				2250BAA32911996A00704CD7 /* GraphTVC.swift in Sources */,
 				2250BA5A29102D8D00704CD7 /* HomeWireFrame.swift in Sources */,
+				2250BAA02911916900704CD7 /* GraphicService.swift in Sources */,
 				2250BA92291178D800704CD7 /* HomeGraphProtocols.swift in Sources */,
 				2250BA9A291185EA00704CD7 /* HomeGraphRemoteDataManager.swift in Sources */,
 				2250BA6D29102FCA00704CD7 /* HomeRemoteDataManager.swift in Sources */,

@@ -20,15 +20,14 @@ class HomeGraphPresenter {
 extension HomeGraphPresenter: HomeGraphPresenterProtocol {
     
     func viewDidLoad() {
-        print("did load successful")
-//        interactor?.getDataPokemon(nil)
+        interactor?.getData()
     }
     
 }
 
 extension HomeGraphPresenter: HomeGraphInteractorOutputProtocol {
-    //    func getListPokemon(list: [PokemonModel]) {
-    //        view?.getListPokemon(list: list)
-    //    }
     
+    func getListDataGraph(list: [GraphicModel]) {
+        view?.getListGraphics(list: list)
+    }
 }

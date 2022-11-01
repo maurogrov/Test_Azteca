@@ -10,6 +10,7 @@ import Foundation
 protocol HomeGraphViewProtocols: AnyObject {
     // PRESENTER -> VIEW
     var presenter: HomeGraphPresenterProtocol? {get set}
+    func getListGraphics(list: [GraphicModel])
 }
 
 protocol HomeGraphPresenterProtocol: AnyObject {
@@ -34,7 +35,7 @@ protocol HomeGraphInteractorInputProtocol: AnyObject {
 
 protocol HomeGraphInteractorOutputProtocol: AnyObject {
     //INTERACTOR -> PRESENTER
-//    func getListPokemon(list: [PokemonModel])
+    func getListDataGraph(list: [GraphicModel])
 }
 protocol HomeGraphRemoteDataManagerOutputProtocol: AnyObject {
     // REMOTEDATAMANAGER -> INTERACTOR
@@ -42,7 +43,7 @@ protocol HomeGraphRemoteDataManagerOutputProtocol: AnyObject {
 }
 protocol HomeGraphRemoteDataManagerInputProtocol: AnyObject {
     // INTERACTOR -> REMOTEDATAMANAGER
-//    func getDataPokemonService(_ lastIdItem: Int?, _ closure: @escaping ([PokemonModel]) -> Void)
+    func getDataGraph(_ closure: @escaping ([GraphicModel]) -> Void)
     
 }
 

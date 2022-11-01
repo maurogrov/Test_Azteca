@@ -11,21 +11,23 @@ import Foundation
 class HomeGraphInteractor : HomeGraphInteractorInputProtocol{
    
     weak var presenter : HomeGraphInteractorOutputProtocol?
-    
     var remoteDataManager: HomeGraphRemoteDataManagerInputProtocol?
     
     
-//    private var dataPokemons: [PokemonModel] = []
+    private var dataGraph: [GraphicModel] = []
     
     func getData() {
-//        remoteDataManager?.getDataPokemonService(lastIdItem, { pokemons in
-//            self.presenter?.getListPokemon(list: pokemons)
-//        })
+        if dataGraph.count == 0 {
+            remoteDataManager?.getDataGraph({ arrayData in
+                self.dataGraph = arrayData
+                self.presenter?.getListDataGraph(list: self.dataGraph)
+            })
+        }
+        else {
+            self.presenter?.getListDataGraph(list: self.dataGraph)
+        }
     }
     
-    
 }
 
-extension HomeGraphInteractor: HomeGraphRemoteDataManagerOutputProtocol {
-
-}
+extension HomeGraphInteractor: HomeGraphRemoteDataManagerOutputProtocol {}

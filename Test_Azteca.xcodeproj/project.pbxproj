@@ -31,7 +31,6 @@
 		2250BA7C29103B4500704CD7 /* GraphicsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2250BA7B29103B4500704CD7 /* GraphicsTVC.xib */; };
 		2250BA7F29104ABF00704CD7 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA7E29104ABF00704CD7 /* PhotoView.swift */; };
 		2250BA81291050AC00704CD7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA80291050AC00704CD7 /* UIView+Extensions.swift */; };
-		2250BA87291064F600704CD7 /* StadisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA86291064F600704CD7 /* StadisticsView.swift */; };
 		2250BA8A2911784300704CD7 /* HomeGraphWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA892911784300704CD7 /* HomeGraphWireFrame.swift */; };
 		2250BA8D2911789A00704CD7 /* HomeGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA8C2911789A00704CD7 /* HomeGraphView.swift */; };
 		2250BA90291178CC00704CD7 /* HomeGraphPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA8F291178CC00704CD7 /* HomeGraphPresenter.swift */; };
@@ -44,6 +43,8 @@
 		2250BAA32911996A00704CD7 /* GraphTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAA22911996A00704CD7 /* GraphTVC.swift */; };
 		2250BAA52911997A00704CD7 /* GraphTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2250BAA42911997A00704CD7 /* GraphTVC.xib */; };
 		2250BAA729119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAA629119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift */; };
+		2250BAA92911AC3800704CD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2250BAA82911AC3800704CD7 /* GoogleService-Info.plist */; };
+		2250BAAC2911B42C00704CD7 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAAB2911B42C00704CD7 /* BackgroundView.swift */; };
 		76DE711975009E1EB9FA31BD /* Pods_Test_Azteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +75,6 @@
 		2250BA7B29103B4500704CD7 /* GraphicsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphicsTVC.xib; sourceTree = "<group>"; };
 		2250BA7E29104ABF00704CD7 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		2250BA80291050AC00704CD7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		2250BA86291064F600704CD7 /* StadisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadisticsView.swift; sourceTree = "<group>"; };
 		2250BA892911784300704CD7 /* HomeGraphWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphWireFrame.swift; sourceTree = "<group>"; };
 		2250BA8C2911789A00704CD7 /* HomeGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphView.swift; sourceTree = "<group>"; };
 		2250BA8F291178CC00704CD7 /* HomeGraphPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphPresenter.swift; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		2250BAA22911996A00704CD7 /* GraphTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTVC.swift; sourceTree = "<group>"; };
 		2250BAA42911997A00704CD7 /* GraphTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphTVC.xib; sourceTree = "<group>"; };
 		2250BAA629119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeGraphView+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		2250BAA82911AC3800704CD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2250BAAB2911B42C00704CD7 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Azteca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F5458336F5E208C5BCD6F4 /* Pods-Test_Azteca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.release.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.release.xcconfig"; sourceTree = "<group>"; };
 		B4619963547386BDDFFF8F4D /* Pods-Test_Azteca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.debug.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				2250BA9E2911915700704CD7 /* Services */,
 				2250BA5E29102E1400704CD7 /* Extensions */,
+				2250BAAA2911B3FD00704CD7 /* Misc */,
 				2250BA5429102D3200704CD7 /* Modules */,
 				2250BA3F29102C9800704CD7 /* AppDelegate.swift */,
 				2250BA4129102C9800704CD7 /* SceneDelegate.swift */,
@@ -135,6 +138,7 @@
 				2250BA4829102C9A00704CD7 /* Assets.xcassets */,
 				2250BA4A29102C9A00704CD7 /* LaunchScreen.storyboard */,
 				2250BA4D29102C9A00704CD7 /* Info.plist */,
+				2250BAA82911AC3800704CD7 /* GoogleService-Info.plist */,
 			);
 			path = Test_Azteca;
 			sourceTree = "<group>";
@@ -152,7 +156,6 @@
 			children = (
 				2250BA5829102D7100704CD7 /* Home_Main */,
 				2250BA7D291048FE00704CD7 /* Home_DetailPhoto */,
-				2250BA85291064BE00704CD7 /* Home_Stadistics */,
 				2250BA882911781F00704CD7 /* Home_Graph */,
 				2250BA5629102D5F00704CD7 /* HomeStoryBoard.storyboard */,
 			);
@@ -238,14 +241,6 @@
 			path = Home_DetailPhoto;
 			sourceTree = "<group>";
 		};
-		2250BA85291064BE00704CD7 /* Home_Stadistics */ = {
-			isa = PBXGroup;
-			children = (
-				2250BA86291064F600704CD7 /* StadisticsView.swift */,
-			);
-			path = Home_Stadistics;
-			sourceTree = "<group>";
-		};
 		2250BA882911781F00704CD7 /* Home_Graph */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +312,14 @@
 				2250BAA42911997A00704CD7 /* GraphTVC.xib */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2250BAAA2911B3FD00704CD7 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2250BAAB2911B42C00704CD7 /* BackgroundView.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		2C6DFE338864D0B3B1FA04B7 /* Pods */ = {
@@ -398,6 +401,7 @@
 			files = (
 				2250BA7C29103B4500704CD7 /* GraphicsTVC.xib in Resources */,
 				2250BA4C29102C9A00704CD7 /* LaunchScreen.storyboard in Resources */,
+				2250BAA92911AC3800704CD7 /* GoogleService-Info.plist in Resources */,
 				2250BA4929102C9A00704CD7 /* Assets.xcassets in Resources */,
 				2250BA782910387B00704CD7 /* PhotoTVC.xib in Resources */,
 				2250BAA52911997A00704CD7 /* GraphTVC.xib in Resources */,
@@ -474,10 +478,10 @@
 				2250BA90291178CC00704CD7 /* HomeGraphPresenter.swift in Sources */,
 				2250BA5D29102DE100704CD7 /* HomeView.swift in Sources */,
 				2250BA4229102C9800704CD7 /* SceneDelegate.swift in Sources */,
+				2250BAAC2911B42C00704CD7 /* BackgroundView.swift in Sources */,
 				2250BA9829117B4A00704CD7 /* HomeRouter.swift in Sources */,
 				2250BA722910342300704CD7 /* NameTVC.swift in Sources */,
 				2250BA6F2910333F00704CD7 /* HomeView+UITableViewDelegate.swift in Sources */,
-				2250BA87291064F600704CD7 /* StadisticsView.swift in Sources */,
 				2250BA6929102F6200704CD7 /* HomeInteractor.swift in Sources */,
 				2250BA6129102E4900704CD7 /* UIViewController+Storyboard.swift in Sources */,
 				2250BA762910383F00704CD7 /* PhotoTVC.swift in Sources */,

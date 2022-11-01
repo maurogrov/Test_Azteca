@@ -32,35 +32,5 @@ class HomeRemoteDataManager {
 
 extension HomeRemoteDataManager : HomeRemoteDataManagerInputProtocol{
     
-//    func getDataPokemonService(_ lastIdItem: Int?, _ closure: @escaping ([PokemonModel]) -> Void) {
-//
-//        let nextId = lastIdItem != nil ? lastIdItem! + 1 : 1
-//        var objects: [PokemonModel] = []
-//
-//        let urls = buildUrls(nextId: nextId)
-//
-//        //Warning concurrent, overload system MG.
-//        DispatchQueue(label: "com.queue.serial").async {
-//            let downloadGroup = DispatchGroup()
-//
-//            urls.forEach {
-//                downloadGroup.enter()
-//                PokemonService.downloadData(url: $0) {
-//
-//                    if let model = $0 {
-//                        objects.append(model)
-//                    }
-//                    downloadGroup.leave()
-//                }
-//            }
-//
-//            downloadGroup.wait()
-//            DispatchQueue.main.async {
-//                objects.sort(by: { $0.id < $1.id })
-//                closure(objects)
-//            }
-//        }
-//
-//    }
-    
+
 }

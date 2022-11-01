@@ -6,16 +6,44 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class HomeView: UIViewController, Storyboarded {
     
     var presenter: HomePresenterProtocol?
     @IBOutlet weak var UserTbl: UITableView!
     
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //readData()
+//        writeData()
         build()
+    }
+    
+    
+    func readData() {
+        let docRef = db.document("ios/TestAzteca")
+        
+        docRef.addSnapshotListener { snapshot, error in
+            
+            guard let data = snapshot?.data(), error == nil else {
+                return
+            }
+            
+            
+            guard let isDinamic = data["dinamicBackground"] as? Bool else {
+                return
+            }
+            print("this is the data, ", isDinamic)
+            
+        }
+    }
+    
+    func writeData(){
+        let docRef = db.document("ios/TestAzteca")
+        docRef.setData(["text": "read image"])
     }
     
     func build(){

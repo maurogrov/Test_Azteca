@@ -28,6 +28,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="EM6-8J-YY8" firstAttribute="leading" secondItem="K91-p8-agT" secondAttribute="leading" constant="20" id="C0G-vw-fkC"/>
                     <constraint firstItem="Dva-gD-HUU" firstAttribute="top" secondItem="EM6-8J-YY8" secondAttribute="bottom" constant="10" id="Lhh-xo-ql8"/>
@@ -38,6 +39,7 @@
                     <constraint firstAttribute="trailing" secondItem="EM6-8J-YY8" secondAttribute="trailing" constant="20" id="tiu-hy-DY5"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="chartView" destination="Dva-gD-HUU" id="0mi-Xh-HPS"/>
                 <outlet property="questionLbl" destination="EM6-8J-YY8" id="D7N-fF-WR5"/>

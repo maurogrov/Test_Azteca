@@ -45,6 +45,7 @@
 		2250BAA729119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAA629119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift */; };
 		2250BAA92911AC3800704CD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2250BAA82911AC3800704CD7 /* GoogleService-Info.plist */; };
 		2250BAAC2911B42C00704CD7 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAAB2911B42C00704CD7 /* BackgroundView.swift */; };
+		2250BAAE2911D8BD00704CD7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BAAD2911D8BD00704CD7 /* UIColor+Extensions.swift */; };
 		76DE711975009E1EB9FA31BD /* Pods_Test_Azteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		2250BAA629119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeGraphView+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		2250BAA82911AC3800704CD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2250BAAB2911B42C00704CD7 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		2250BAAD2911D8BD00704CD7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Azteca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F5458336F5E208C5BCD6F4 /* Pods-Test_Azteca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.release.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.release.xcconfig"; sourceTree = "<group>"; };
 		B4619963547386BDDFFF8F4D /* Pods-Test_Azteca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.debug.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				2250BA5F29102E2000704CD7 /* UIViewController */,
 				2250BA80291050AC00704CD7 /* UIView+Extensions.swift */,
+				2250BAAD2911D8BD00704CD7 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2250BA94291178E900704CD7 /* HomeGraphInteractor.swift in Sources */,
+				2250BAAE2911D8BD00704CD7 /* UIColor+Extensions.swift in Sources */,
 				2250BA8A2911784300704CD7 /* HomeGraphWireFrame.swift in Sources */,
 				2250BA9D2911901D00704CD7 /* GraphicModel.swift in Sources */,
 				2250BAA729119B8200704CD7 /* HomeGraphView+UITableViewDelegate.swift in Sources */,

@@ -40,13 +40,13 @@ class BackgroundView: UIView {
                 print("Error")
                 return
             }
-            print(isDinamic)
+            
             if isDinamic, red <= 255, green <= 255, blue <= 255 {
                 self?.backgroundColor = UIColor(red: red, green: green, blue: blue)
                 
                 
             }else {
-                self?.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0)
+                self?.backgroundColor = UIColor(red: 255, green: 255, blue: 255)
             }
         }
     }

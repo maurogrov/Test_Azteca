@@ -12,6 +12,8 @@ class GraphicsTVC: UITableViewCell {
     
     static let id : String = "GraphicsTVC"
 
+    var pressActionHandler: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,4 +25,7 @@ class GraphicsTVC: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func stadisticBtnAction(_ sender: Any) {
+        pressActionHandler?()
+    }
 }

@@ -15,6 +15,8 @@ class HomeWireFrame {
         
         let presenter : HomePresenterProtocol & HomeInteractorOutputProtocol = HomePresenter()
         let interactor : HomeInteractorInputProtocol & HomeRemoteDataManagerOutputProtocol = HomeInteractor()
+        let router : HomeRouterInputProtocol = HomeRouter()
+        
         let localDataManager: HomeLocalDataManagerInputProtocol = HomeLocalDataManager()
         let remoteDataManager: HomeRemoteDataManagerInputProtocol = HomeRemoteDataManager()
         let wireFrame : HomeWireFrame = HomeWireFrame()
@@ -24,6 +26,7 @@ class HomeWireFrame {
         presenter.view = view
         presenter.wireFrame = wireFrame
         presenter.interactor = interactor
+        presenter.router = router
         
         interactor.presenter = presenter
         interactor.localDataManager = localDataManager

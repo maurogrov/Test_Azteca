@@ -25,6 +25,9 @@
                         <rect key="frame" x="271" y="4.6666666666666679" width="99" height="35"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="Stadistics"/>
+                        <connections>
+                            <action selector="stadisticBtnAction:" destination="qg4-XF-yKN" eventType="touchUpInside" id="1UF-By-aoi"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

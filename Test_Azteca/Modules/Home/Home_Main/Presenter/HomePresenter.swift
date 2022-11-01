@@ -7,24 +7,33 @@
 
 import Foundation
 
+
+enum goToEnum {
+    case Estadistics
+}
+
 class HomePresenter {
     
     //towards
     weak var view: HomeViewProtocol?
     var wireFrame: HomeWireFrame?
     var interactor: HomeInteractorInputProtocol?
+    var router: HomeRouterInputProtocol?
     
     
 }
 
-extension HomePresenter: HomePresenterProtocol {
+extension HomePresenter: HomePresenterProtocol { 
  
     func viewDidLoad() {
 //        interactor?.getDataPokemon(nil)
     }
     
-    func feedData(lastIdItem: Int) {
-//        interactor?.getDataPokemon(lastIdItem)
+    func goTo(_ page : goToEnum) {
+        switch page {
+        case .Estadistics:
+            router?.goToHomeGraph()
+        }
     }
     
    

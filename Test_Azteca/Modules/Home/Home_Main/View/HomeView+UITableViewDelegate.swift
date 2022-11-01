@@ -43,18 +43,33 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
             return cell
         case .graphics:
             let cell = tableView.dequeueReusableCell(withIdentifier: GraphicsTVC.id, for: indexPath) as! GraphicsTVC
+            cell.pressActionHandler = { [weak self] () in
+                guard self != nil else { return }
+                self?.goToDetailStadistics()
+            }
             return cell
         default:
             return UITableViewCell()
         }
-        
-        
-        
-
-        
-    
     }
     
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        
+        let typeCell = UserTblEnum(rawValue: indexPath.section)
+        
+        switch typeCell {
+        case .name:
+            return 60
+        case .photo:
+            return 40
+        case .graphics:
+            return 60
+        case .none:
+            return 0
+        }
+    }
     
     
 }

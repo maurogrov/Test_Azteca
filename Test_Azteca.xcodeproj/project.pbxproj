@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,15 @@
 		2250BA7C29103B4500704CD7 /* GraphicsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2250BA7B29103B4500704CD7 /* GraphicsTVC.xib */; };
 		2250BA7F29104ABF00704CD7 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA7E29104ABF00704CD7 /* PhotoView.swift */; };
 		2250BA81291050AC00704CD7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA80291050AC00704CD7 /* UIView+Extensions.swift */; };
+		2250BA87291064F600704CD7 /* StadisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA86291064F600704CD7 /* StadisticsView.swift */; };
+		2250BA8A2911784300704CD7 /* HomeGraphWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA892911784300704CD7 /* HomeGraphWireFrame.swift */; };
+		2250BA8D2911789A00704CD7 /* HomeGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA8C2911789A00704CD7 /* HomeGraphView.swift */; };
+		2250BA90291178CC00704CD7 /* HomeGraphPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA8F291178CC00704CD7 /* HomeGraphPresenter.swift */; };
+		2250BA92291178D800704CD7 /* HomeGraphProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA91291178D800704CD7 /* HomeGraphProtocols.swift */; };
+		2250BA94291178E900704CD7 /* HomeGraphInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA93291178E900704CD7 /* HomeGraphInteractor.swift */; };
+		2250BA9829117B4A00704CD7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA9729117B4A00704CD7 /* HomeRouter.swift */; };
+		2250BA9A291185EA00704CD7 /* HomeGraphRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250BA99291185EA00704CD7 /* HomeGraphRemoteDataManager.swift */; };
+		76DE711975009E1EB9FA31BD /* Pods_Test_Azteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +69,17 @@
 		2250BA7B29103B4500704CD7 /* GraphicsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphicsTVC.xib; sourceTree = "<group>"; };
 		2250BA7E29104ABF00704CD7 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		2250BA80291050AC00704CD7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		2250BA86291064F600704CD7 /* StadisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadisticsView.swift; sourceTree = "<group>"; };
+		2250BA892911784300704CD7 /* HomeGraphWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphWireFrame.swift; sourceTree = "<group>"; };
+		2250BA8C2911789A00704CD7 /* HomeGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphView.swift; sourceTree = "<group>"; };
+		2250BA8F291178CC00704CD7 /* HomeGraphPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphPresenter.swift; sourceTree = "<group>"; };
+		2250BA91291178D800704CD7 /* HomeGraphProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphProtocols.swift; sourceTree = "<group>"; };
+		2250BA93291178E900704CD7 /* HomeGraphInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphInteractor.swift; sourceTree = "<group>"; };
+		2250BA9729117B4A00704CD7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2250BA99291185EA00704CD7 /* HomeGraphRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGraphRemoteDataManager.swift; sourceTree = "<group>"; };
+		69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Azteca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F5458336F5E208C5BCD6F4 /* Pods-Test_Azteca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.release.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.release.xcconfig"; sourceTree = "<group>"; };
+		B4619963547386BDDFFF8F4D /* Pods-Test_Azteca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Azteca.debug.xcconfig"; path = "Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DE711975009E1EB9FA31BD /* Pods_Test_Azteca.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +99,8 @@
 			children = (
 				2250BA3E29102C9800704CD7 /* Test_Azteca */,
 				2250BA3D29102C9800704CD7 /* Products */,
+				2C6DFE338864D0B3B1FA04B7 /* Pods */,
+				62A7EC82E483D4504A832B77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +141,8 @@
 			children = (
 				2250BA5829102D7100704CD7 /* Home_Main */,
 				2250BA7D291048FE00704CD7 /* Home_DetailPhoto */,
+				2250BA85291064BE00704CD7 /* Home_Stadistics */,
+				2250BA882911781F00704CD7 /* Home_Graph */,
 				2250BA5629102D5F00704CD7 /* HomeStoryBoard.storyboard */,
 			);
 			path = Home;
@@ -130,6 +155,7 @@
 				2250BA5B29102DBD00704CD7 /* View */,
 				2250BA6229102E9F00704CD7 /* Presenter */,
 				2250BA6729102F3900704CD7 /* Interactor */,
+				2250BA9629117B2200704CD7 /* Router */,
 			);
 			path = Home_Main;
 			sourceTree = "<group>";
@@ -201,6 +227,76 @@
 			path = Home_DetailPhoto;
 			sourceTree = "<group>";
 		};
+		2250BA85291064BE00704CD7 /* Home_Stadistics */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA86291064F600704CD7 /* StadisticsView.swift */,
+			);
+			path = Home_Stadistics;
+			sourceTree = "<group>";
+		};
+		2250BA882911781F00704CD7 /* Home_Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA8B2911787700704CD7 /* View */,
+				2250BA8E291178B600704CD7 /* Presenter */,
+				2250BA952911790800704CD7 /* Interactor */,
+				2250BA892911784300704CD7 /* HomeGraphWireFrame.swift */,
+			);
+			path = Home_Graph;
+			sourceTree = "<group>";
+		};
+		2250BA8B2911787700704CD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA8C2911789A00704CD7 /* HomeGraphView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2250BA8E291178B600704CD7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA8F291178CC00704CD7 /* HomeGraphPresenter.swift */,
+				2250BA91291178D800704CD7 /* HomeGraphProtocols.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2250BA952911790800704CD7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA93291178E900704CD7 /* HomeGraphInteractor.swift */,
+				2250BA99291185EA00704CD7 /* HomeGraphRemoteDataManager.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2250BA9629117B2200704CD7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2250BA9729117B4A00704CD7 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2C6DFE338864D0B3B1FA04B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4619963547386BDDFFF8F4D /* Pods-Test_Azteca.debug.xcconfig */,
+				70F5458336F5E208C5BCD6F4 /* Pods-Test_Azteca.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62A7EC82E483D4504A832B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69A8E5C854A8BF3D99878962 /* Pods_Test_Azteca.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2250BA5029102C9A00704CD7 /* Build configuration list for PBXNativeTarget "Test_Azteca" */;
 			buildPhases = (
+				1A5E6EEE01BB99D3F390A862 /* [CP] Check Pods Manifest.lock */,
 				2250BA3829102C9800704CD7 /* Sources */,
 				2250BA3929102C9800704CD7 /* Frameworks */,
 				2250BA3A29102C9800704CD7 /* Resources */,
+				8B03BDA230836BD18E535D89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,7 +335,7 @@
 				};
 			};
 			buildConfigurationList = 2250BA3729102C9800704CD7 /* Build configuration list for PBXProject "Test_Azteca" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -271,25 +369,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A5E6EEE01BB99D3F390A862 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test_Azteca-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B03BDA230836BD18E535D89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test_Azteca/Pods-Test_Azteca-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2250BA3829102C9800704CD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2250BA94291178E900704CD7 /* HomeGraphInteractor.swift in Sources */,
+				2250BA8A2911784300704CD7 /* HomeGraphWireFrame.swift in Sources */,
 				2250BA4429102C9800704CD7 /* ViewController.swift in Sources */,
 				2250BA5A29102D8D00704CD7 /* HomeWireFrame.swift in Sources */,
+				2250BA92291178D800704CD7 /* HomeGraphProtocols.swift in Sources */,
+				2250BA9A291185EA00704CD7 /* HomeGraphRemoteDataManager.swift in Sources */,
 				2250BA6D29102FCA00704CD7 /* HomeRemoteDataManager.swift in Sources */,
 				2250BA6B29102FA700704CD7 /* HomeLocalDataManager.swift in Sources */,
 				2250BA6429102EB000704CD7 /* HomeProtocols.swift in Sources */,
 				2250BA4029102C9800704CD7 /* AppDelegate.swift in Sources */,
 				2250BA81291050AC00704CD7 /* UIView+Extensions.swift in Sources */,
+				2250BA90291178CC00704CD7 /* HomeGraphPresenter.swift in Sources */,
 				2250BA5D29102DE100704CD7 /* HomeView.swift in Sources */,
 				2250BA4229102C9800704CD7 /* SceneDelegate.swift in Sources */,
+				2250BA9829117B4A00704CD7 /* HomeRouter.swift in Sources */,
 				2250BA722910342300704CD7 /* NameTVC.swift in Sources */,
 				2250BA6F2910333F00704CD7 /* HomeView+UITableViewDelegate.swift in Sources */,
+				2250BA87291064F600704CD7 /* StadisticsView.swift in Sources */,
 				2250BA6929102F6200704CD7 /* HomeInteractor.swift in Sources */,
 				2250BA6129102E4900704CD7 /* UIViewController+Storyboard.swift in Sources */,
 				2250BA762910383F00704CD7 /* PhotoTVC.swift in Sources */,
+				2250BA8D2911789A00704CD7 /* HomeGraphView.swift in Sources */,
 				2250BA6629102F0300704CD7 /* HomePresenter.swift in Sources */,
 				2250BA7A29103B3600704CD7 /* GraphicsTVC.swift in Sources */,
 				2250BA7F29104ABF00704CD7 /* PhotoView.swift in Sources */,
@@ -434,6 +582,7 @@
 		};
 		2250BA5129102C9A00704CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4619963547386BDDFFF8F4D /* Pods-Test_Azteca.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +611,7 @@
 		};
 		2250BA5229102C9A00704CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F5458336F5E208C5BCD6F4 /* Pods-Test_Azteca.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

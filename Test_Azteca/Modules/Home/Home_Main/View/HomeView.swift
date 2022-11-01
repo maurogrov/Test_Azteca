@@ -40,6 +40,14 @@ class HomeView: UIViewController, Storyboarded {
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.present(vc, animated: true, completion: nil)
     }
+    
+    func goToDetailStadistics(){
+        presenter?.goTo(.Estadistics)
+        
+//        let vc = StadisticsView.instantiate(fromStoryboard: .Home)
+//        self.navigationController?.navigationBar.isHidden = false
+//        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 

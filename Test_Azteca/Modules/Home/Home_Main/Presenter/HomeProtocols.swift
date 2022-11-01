@@ -21,13 +21,19 @@ protocol HomeInteractorInputProtocol: AnyObject {
 //    func getDataPokemon(_ lastIdItem: Int?)
 }
 
+protocol HomeRouterInputProtocol: AnyObject {
+    //PRESENTER -> ROUTER
+    func goToHomeGraph()
+}
+
 protocol HomePresenterProtocol: AnyObject {
     //VIEW -> PRESENTER
     var view: HomeViewProtocol? { get set }
     var interactor: HomeInteractorInputProtocol? {get set}
     var wireFrame: HomeWireFrame? {get set}
+    var router : HomeRouterInputProtocol? {get set}
     func viewDidLoad()
-//    func feedData(lastIdItem: Int)
+    func goTo(_ page : goToEnum)
     
 }
 

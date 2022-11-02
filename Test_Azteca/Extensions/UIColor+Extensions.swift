@@ -8,8 +8,6 @@
 import Foundation
 import Charts
 
-
-
 extension NSUIColor {
     
     convenience init(red: Int, green: Int, blue: Int){

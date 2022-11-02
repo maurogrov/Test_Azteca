@@ -22,12 +22,12 @@ class PhotoView: UIViewController, Storyboarded {
     }
     
     func build() {
-        if let data = UserDefaults.standard.data(forKey: "imageProfile"){
+        if let data = UserDefaults.standard.object(forKey: "imageProfile") as? String{
             openCameraBtn.setTitle("Change Photo", for: .normal)
-            let decoded = try! PropertyListDecoder().decode(Data.self, from: data)
-            let image = UIImage(data: decoded)
-            imageImg.image = image
-                        
+            print("this is the data profile: ___",data.count)
+            print("save Data", data)
+            let imageData = Data(base64Encoded: data)
+            imageImg.image = UIImage(data: imageData!)
         }
         else {
             openCameraBtn.setTitle("New Photo", for: .normal)
@@ -63,12 +63,13 @@ extension PhotoView: UIImagePickerControllerDelegate, UINavigationControllerDele
         
         picker.dismiss(animated: true) {
             self.imageImg.image = image
-            guard let data = image.jpegData(compressionQuality: 0.5) else {
+            
+            guard let dataStr = image.jpegData(compressionQuality: 0.5)?.base64EncodedString() else {
                 print("error")
                 return
             }
-            let encoded = try! PropertyListEncoder().encode(data)
-            UserDefaults.standard.set(encoded, forKey: "imageProfile")
+            
+            UserDefaults.standard.set(dataStr, forKey: "imageProfile")
             self.openCameraBtn.setTitle("Change Photo", for: .normal)
         }
     }

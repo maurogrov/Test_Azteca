@@ -10,4 +10,5 @@ target 'Test_Azteca' do
 	pod 'Charts'
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
+	pod 'Firebase/Storage'
 end

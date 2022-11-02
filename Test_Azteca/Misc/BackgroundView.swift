@@ -31,7 +31,6 @@ class BackgroundView: UIView {
             guard let data = snapshot?.data(), error == nil else {
                 return
             }
-            print(data)
             guard let isDinamic = data["isDinamicBackground"] as? Bool,
                   let red = data["red"] as? Int,
                   let green = data["green"] as? Int,

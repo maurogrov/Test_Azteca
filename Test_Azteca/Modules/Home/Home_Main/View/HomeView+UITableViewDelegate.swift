@@ -63,7 +63,7 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         case .name:
             return 60
         case .photo:
-            return 40
+            return 140
         case .graphics:
             return 60
         case .none:

@@ -19,24 +19,33 @@
                             <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aV2-Ic-ps8">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-Yp-m4s">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-Yp-m4s">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="698"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BJ-xs-9j0">
                                         <rect key="frame" x="0.0" y="708" width="390" height="35"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Update Profile"/>
+                                        <connections>
+                                            <action selector="updateProfileBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3Bx-PI-1GA"/>
+                                        </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wfa-TY-Ht4">
+                                        <rect key="frame" x="176.66666666666666" y="363" width="37" height="37"/>
+                                        <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="5BJ-xs-9j0" firstAttribute="top" secondItem="RYV-Yp-m4s" secondAttribute="bottom" constant="10" id="AJO-S6-9Mi"/>
                                     <constraint firstAttribute="trailing" secondItem="5BJ-xs-9j0" secondAttribute="trailing" id="Tjh-6s-inE"/>
+                                    <constraint firstItem="wfa-TY-Ht4" firstAttribute="centerY" secondItem="aV2-Ic-ps8" secondAttribute="centerY" id="U81-Bc-UFz"/>
                                     <constraint firstItem="RYV-Yp-m4s" firstAttribute="top" secondItem="aV2-Ic-ps8" secondAttribute="top" id="WWM-fA-6HL"/>
                                     <constraint firstAttribute="trailing" secondItem="RYV-Yp-m4s" secondAttribute="trailing" id="Z9k-Kw-fBm"/>
                                     <constraint firstItem="5BJ-xs-9j0" firstAttribute="leading" secondItem="aV2-Ic-ps8" secondAttribute="leading" id="gQZ-79-ew5"/>
                                     <constraint firstItem="RYV-Yp-m4s" firstAttribute="leading" secondItem="aV2-Ic-ps8" secondAttribute="leading" id="i2Z-Hn-Jhq"/>
+                                    <constraint firstItem="wfa-TY-Ht4" firstAttribute="centerX" secondItem="aV2-Ic-ps8" secondAttribute="centerX" id="m9h-BG-ePU"/>
                                     <constraint firstAttribute="bottom" secondItem="5BJ-xs-9j0" secondAttribute="bottom" constant="20" id="xe4-jS-NME"/>
                                 </constraints>
                             </view>
@@ -52,6 +61,8 @@
                     </view>
                     <connections>
                         <outlet property="UserTbl" destination="RYV-Yp-m4s" id="e5q-N3-KhY"/>
+                        <outlet property="loadSpiner" destination="wfa-TY-Ht4" id="XVo-dy-J3w"/>
+                        <outlet property="updateBtn" destination="5BJ-xs-9j0" id="w2v-RR-Wkh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

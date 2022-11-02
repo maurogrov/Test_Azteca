@@ -12,6 +12,8 @@ class NameTVC: UITableViewCell {
     static let id : String = "NameTVC"
     @IBOutlet weak var NameTxt: UITextField!
     
+    var changeNameActionHandler: ((String) -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -23,14 +25,18 @@ class NameTVC: UITableViewCell {
     @IBAction func changeEventNameTxt(_ textField: UITextField) {
         
         if let str = textField.text, str != "" {
-            
             let lastChart = String(str.last!)
             let characterSet = CharacterSet(charactersIn: lastChart)
             let allowedLetters = CharacterSet.letters
             let allowedSpaces = CharacterSet.whitespaces
             
             if !allowedLetters.isSuperset(of: characterSet), !allowedSpaces.isSuperset(of: characterSet) {
-                NameTxt.text = String(str.dropLast())
+                let str = String(str.dropLast())
+                NameTxt.text = str
+                changeNameActionHandler?(str)
+            }
+            else{
+                changeNameActionHandler?(str)
             }
         }
     }

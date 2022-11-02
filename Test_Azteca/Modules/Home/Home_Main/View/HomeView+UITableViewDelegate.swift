@@ -32,12 +32,15 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         switch typeCell {
         case .name:
             let cell = tableView.dequeueReusableCell(withIdentifier: NameTVC.id, for: indexPath) as! NameTVC
+            cell.changeNameActionHandler = { name in
+                self.nameUser = name
+            }
             return cell
         case .photo:
             let cell = tableView.dequeueReusableCell(withIdentifier: PhotoTVC.id, for: indexPath) as! PhotoTVC
+            cell.setup()
             cell.pressActionHandler = { [weak self] () in
                 guard self != nil else { return }
-                
                 self?.goToDetailPhoto()
             }
             return cell
@@ -63,7 +66,7 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         case .name:
             return 60
         case .photo:
-            return 140
+            return 200
         case .graphics:
             return 60
         case .none:

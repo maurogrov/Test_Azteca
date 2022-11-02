@@ -20,13 +20,16 @@ class HomePresenter {
     var interactor: HomeInteractorInputProtocol?
     var router: HomeRouterInputProtocol?
     
-    
 }
 
-extension HomePresenter: HomePresenterProtocol { 
+extension HomePresenter: HomePresenterProtocol {
  
     func viewDidLoad() {
 //        interactor?.getDataPokemon(nil)
+    }
+    
+    func updateProfile(name: String) {
+        interactor?.updateProfile(name: name)
     }
     
     func goTo(_ page : goToEnum) {
@@ -35,13 +38,12 @@ extension HomePresenter: HomePresenterProtocol {
             router?.goToHomeGraph()
         }
     }
-    
-   
 }
 
 extension HomePresenter: HomeInteractorOutputProtocol {
-//    func getListPokemon(list: [PokemonModel]) {
-//        view?.getListPokemon(list: list)
-//    }
+    
+    func finishUpdateProfile() {
+        view?.finshLoad()
+    }
     
 }

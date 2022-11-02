@@ -10,7 +10,7 @@ import Foundation
 protocol HomeViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? {get set}
-//    func getListPokemon(list: [PokemonModel])
+    func finshLoad()
 }
 
 protocol HomeInteractorInputProtocol: AnyObject {
@@ -18,7 +18,7 @@ protocol HomeInteractorInputProtocol: AnyObject {
     var presenter: HomeInteractorOutputProtocol? { get set }
     var localDataManager: HomeLocalDataManagerInputProtocol? { get set }
     var remoteDataManager: HomeRemoteDataManagerInputProtocol? { get set }
-//    func getDataPokemon(_ lastIdItem: Int?)
+    func updateProfile(name: String)
 }
 
 protocol HomeRouterInputProtocol: AnyObject {
@@ -32,14 +32,16 @@ protocol HomePresenterProtocol: AnyObject {
     var interactor: HomeInteractorInputProtocol? {get set}
     var wireFrame: HomeWireFrame? {get set}
     var router : HomeRouterInputProtocol? {get set}
+    
     func viewDidLoad()
     func goTo(_ page : goToEnum)
+    func updateProfile(name: String)
     
 }
 
 protocol HomeInteractorOutputProtocol: AnyObject {
     //INTERACTOR -> PRESENTER
-//    func getListPokemon(list: [PokemonModel])
+    func finishUpdateProfile()
 }
 protocol HomeRemoteDataManagerOutputProtocol: AnyObject {
     // REMOTEDATAMANAGER -> INTERACTOR

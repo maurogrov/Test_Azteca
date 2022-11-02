@@ -6,97 +6,25 @@
 //
 
 import UIKit
-import FirebaseFirestore
-import FirebaseStorage
 
 class HomeView: UIViewController, Storyboarded {
     
     var presenter: HomePresenterProtocol?
     @IBOutlet weak var UserTbl: UITableView!
-    
-    let db = Firestore.firestore()
-    
-    private let storage = Storage.storage().reference()
-    
-    
-    
-    
+    @IBOutlet weak var updateBtn: UIButton!
+    @IBOutlet weak var loadSpiner: UIActivityIndicatorView!
+    private var isLoading = false {
+        didSet {
+            loadSpiner.isHidden = !isLoading
+            isLoading ?  loadSpiner.startAnimating() : loadSpiner.stopAnimating()
+        }
+    }
+    internal var nameUser : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
         build()
-        
-        let UUID = getUUID()
-//        getData(id: UUID)
-//        writeData(id: UUID, name: "Mauricio Guerrero", url: <#T##String#>)
-        readData(id: UUID)
-        
-    }
-    
-    func getUUID() -> String {
-        if let uuid = UserDefaults.standard.string(forKey: "uuid"){
-            return uuid
-        }
-        else{
-            let uuid = UUID().uuidString
-            UserDefaults.standard.set(uuid, forKey: "uuid")
-            return uuid
-        }
-    }
-    
-    func getData(id uuid : String){
-        
-        
-        if let data = UserDefaults.standard.object(forKey: "imageProfile") as? String{
-            let imageData = Data(base64Encoded: data)
-            let image = UIImage(data: imageData!)
-            guard let pngData = image?.pngData() else {return}
-            
-            let ref = storage.child("images/\(uuid)/profileImage.png")
-            ref.putData(pngData) { _, error in
-                guard error == nil else {
-                    print("Failed to upload")
-                    return
-                }
-                
-                self.storage.child("images/\(uuid)/profileImage.png").downloadURL { url, error in
-                    
-                    guard let url = url, error == nil else {return}
-                    
-                    let urlString = url.absoluteString
-                    print("downolad URL: \(urlString)")
-                    
-                    self.writeData(id: uuid, name: "Mauricio Guerrero", url: urlString)
-                    
-                    
-                }
-            }
-        }
-        
-    }
-    
-    
-    func readData(id uuid : String) {
-        let docRef = db.document("dataProfile/\(uuid)")
-        docRef.addSnapshotListener { snapshot, error in
-            
-            guard let data = snapshot?.data(), error == nil else {
-                return
-            }
-            
-            guard let urlStr = data["urlStr"] as? String, let name = data["name"] as? String else {
-                return
-            }
-            print("this is the data profile, ", urlStr, name)
-        }
-    }
-    
-    func writeData(id uuid: String, name: String, url: String){
-        let docRef = db.document("dataProfile/\(uuid)")
-        docRef.setData(
-            ["name": "\(name)", "urlStr" : "\(url)", ]
-        )
     }
     
     func build(){
@@ -116,9 +44,13 @@ class HomeView: UIViewController, Storyboarded {
         
     }
     
-    //No MVP The VC is Simple
+    @IBAction func updateProfileBtnAction(_ sender: Any) {
+        isLoading = true
+        presenter?.updateProfile(name: nameUser)
+    }
+    
     func goToDetailPhoto(){
-        
+        //No MVP The VC is Simple
         let vc = PhotoView.instantiate(fromStoryboard: .Home)
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.present(vc, animated: true, completion: nil)
@@ -126,15 +58,11 @@ class HomeView: UIViewController, Storyboarded {
     
     func goToDetailStadistics(){
         presenter?.goTo(.Estadistics)
-        
-        //        let vc = StadisticsView.instantiate(fromStoryboard: .Home)
-        //        self.navigationController?.navigationBar.isHidden = false
-        //        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 
 extension HomeView : HomeViewProtocol {
-    
+    func finshLoad() {
+        isLoading = false
+    }
 }
-

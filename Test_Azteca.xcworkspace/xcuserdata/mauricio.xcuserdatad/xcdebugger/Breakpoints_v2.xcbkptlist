@@ -7,95 +7,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "48A68697-521D-44D0-8EA9-2DC3E4996A51"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "getData(id:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "311D8C56-361D-44E8-BD21-244D3403ED32"
+            uuid = "1605AFD6-D82A-4510-8FF2-90E762523E02"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "readData(id:)"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "finshLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "969B102B-AF32-48B4-99E5-1AE9DAC150C9"
+            uuid = "68BFD5A3-79D2-4C3A-84F9-92AEBFC10EEB"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
+            filePath = "Test_Azteca/Extensions/UIImageView+Extensions.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "readData(id:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0264E47E-0973-42A2-B008-E9F8650BA8EB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "readData(id:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "loadFrom(URLAddress:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0264E47E-0973-42A2-B008-E9F8650BA8EB - b3cfa6503f50cc40"
+                  uuid = "68BFD5A3-79D2-4C3A-84F9-92AEBFC10EEB - 283508a9c8957b31"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Test_Azteca.HomeView.readData(id: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in __C.UIImageView.loadFrom(URLAddress: Swift.String) -&gt; ()"
                   moduleName = "Test_Azteca"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mauricio/Desktop/Test_Azteca/Test_Azteca/Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
+                  urlString = "file:///Users/mauricio/Desktop/Test_Azteca/Test_Azteca/Test_Azteca/Extensions/UIImageView+Extensions.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "408">
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "260">
                </Location>
                <Location
-                  uuid = "0264E47E-0973-42A2-B008-E9F8650BA8EB - 1bd54653e79418c7"
+                  uuid = "68BFD5A3-79D2-4C3A-84F9-92AEBFC10EEB - 283508a9c8957b31"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Test_Azteca.HomeView.readData(id: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in __C.UIImageView.loadFrom(URLAddress: Swift.String) -&gt; ()"
                   moduleName = "Test_Azteca"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mauricio/Desktop/Test_Azteca/Test_Azteca/Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
+                  urlString = "file:///Users/mauricio/Desktop/Test_Azteca/Test_Azteca/Test_Azteca/Extensions/UIImageView+Extensions.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "100">
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "312">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -103,64 +71,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "81D4D1AC-F430-4F12-9732-CF10EE4346E9"
+            uuid = "95A5F07A-99C9-4619-8AD6-23CC465BCBCE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
+            filePath = "Test_Azteca/Extensions/UIImageView+Extensions.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "readData(id:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loadFrom(URLAddress:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "81D4D1AC-F430-4F12-9732-CF10EE4346E9 - 1bd54653e794195b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Test_Azteca.HomeView.readData(id: Swift.String) -&gt; ()"
-                  moduleName = "Test_Azteca"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mauricio/Desktop/Test_Azteca/Test_Azteca/Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "424">
-               </Location>
-               <Location
-                  uuid = "81D4D1AC-F430-4F12-9732-CF10EE4346E9 - 1bd54653e794195b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Test_Azteca.HomeView.readData(id: Swift.String) -&gt; ()"
-                  moduleName = "Test_Azteca"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mauricio/Desktop/Test_Azteca/Test_Azteca/Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "676">
-               </Location>
-               <Location
-                  uuid = "81D4D1AC-F430-4F12-9732-CF10EE4346E9 - 1bd54653e794195b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Test_Azteca.HomeView.readData(id: Swift.String) -&gt; ()"
-                  moduleName = "Test_Azteca"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mauricio/Desktop/Test_Azteca/Test_Azteca/Test_Azteca/Modules/Home/Home_Main/View/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "980">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

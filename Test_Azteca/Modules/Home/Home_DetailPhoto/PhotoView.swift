@@ -24,8 +24,6 @@ class PhotoView: UIViewController, Storyboarded {
     func build() {
         if let data = UserDefaults.standard.object(forKey: "imageProfile") as? String{
             openCameraBtn.setTitle("Change Photo", for: .normal)
-            print("this is the data profile: ___",data.count)
-            print("save Data", data)
             let imageData = Data(base64Encoded: data)
             imageImg.image = UIImage(data: imageData!)
         }

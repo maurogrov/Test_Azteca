@@ -22,7 +22,6 @@ extension HomeGraphPresenter: HomeGraphPresenterProtocol {
     func viewDidLoad() {
         interactor?.getData()
     }
-    
 }
 
 extension HomeGraphPresenter: HomeGraphInteractorOutputProtocol {

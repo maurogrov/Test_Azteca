@@ -27,12 +27,10 @@ class GraphTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
     
     func setup(with data: GraphicModel){
@@ -42,7 +40,6 @@ class GraphTVC: UITableViewCell {
         setupChartView()
         let dataSet = setupEntriesValues(with: data)
         chartView.data = PieChartData(dataSet: dataSet)
-        
     }
     
     func setupChartView() {
@@ -61,7 +58,6 @@ class GraphTVC: UITableViewCell {
         
         var indexcolors = 0;
         
-    
         for i in 0..<data.values.count {
             let obj = data.values[i]
             

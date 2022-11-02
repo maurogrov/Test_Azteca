@@ -30,9 +30,6 @@ protocol HomeGraphInteractorInputProtocol: AnyObject {
     func getData()
 }
 
-
-
-
 protocol HomeGraphInteractorOutputProtocol: AnyObject {
     //INTERACTOR -> PRESENTER
     func getListDataGraph(list: [GraphicModel])

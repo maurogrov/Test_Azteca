@@ -14,6 +14,15 @@ class PhotoTVC: UITableViewCell {
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var profileImageView: UIView!
+    @IBOutlet weak var spinerAct: UIActivityIndicatorView!
+    
+    
+    private var isLoading = false {
+        didSet {
+            spinerAct.isHidden = !isLoading
+            isLoading ?  spinerAct.startAnimating() : spinerAct.stopAnimating()
+        }
+    }
     
     static let id : String = "PhotoTVC"
     var pressActionHandler: (() -> Void)?
@@ -30,7 +39,6 @@ class PhotoTVC: UITableViewCell {
         profileImageView.layer.masksToBounds = true
         profileImg.transform = self.profileImg.transform.rotated(by: CGFloat(Double.pi / 2))
         readData(id: getUUID())
-       
     }
     
     func getUUID() -> String {
@@ -57,8 +65,10 @@ class PhotoTVC: UITableViewCell {
             }
             DispatchQueue.main.async {
                 self.nameLbl.text = name
-               
-                self.profileImg.loadFrom(URLAddress: urlStr)
+                self.isLoading = true
+                self.profileImg.loadFrom(URLAddress: urlStr) {
+                    self.isLoading = false
+                }
             }
         }
     }

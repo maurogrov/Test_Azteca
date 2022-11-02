@@ -45,10 +45,16 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i8j-ga-ueD">
                                                 <rect key="frame" x="20" y="10" width="250" height="167"/>
                                             </imageView>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="FbD-vs-joA">
+                                                <rect key="frame" x="126.66666666666666" y="75" width="37" height="37"/>
+                                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="i8j-ga-ueD" secondAttribute="bottom" constant="10" id="HCM-a8-1Qh"/>
+                                            <constraint firstItem="FbD-vs-joA" firstAttribute="centerX" secondItem="lC1-3C-0I9" secondAttribute="centerX" id="L61-Ku-9sP"/>
                                             <constraint firstAttribute="trailing" secondItem="i8j-ga-ueD" secondAttribute="trailing" constant="20" id="Or4-7B-1yC"/>
+                                            <constraint firstItem="FbD-vs-joA" firstAttribute="centerY" secondItem="lC1-3C-0I9" secondAttribute="centerY" id="aNy-Hf-Yi5"/>
                                             <constraint firstItem="i8j-ga-ueD" firstAttribute="top" secondItem="lC1-3C-0I9" secondAttribute="top" constant="10" id="dcd-yn-N1h"/>
                                             <constraint firstItem="i8j-ga-ueD" firstAttribute="leading" secondItem="lC1-3C-0I9" secondAttribute="leading" constant="20" id="rSp-ba-CQ4"/>
                                         </constraints>
@@ -102,8 +108,9 @@
             <connections>
                 <outlet property="imageBtn" destination="m4a-Xp-oSB" id="uIs-tc-e2Y"/>
                 <outlet property="nameLbl" destination="2yQ-Zs-o59" id="1Qq-RZ-a89"/>
-                <outlet property="profileImageView" destination="lC1-3C-0I9" id="LxO-P4-3GO"/>
+                <outlet property="profileImageView" destination="lC1-3C-0I9" id="sOW-gj-7qi"/>
                 <outlet property="profileImg" destination="i8j-ga-ueD" id="kJ4-67-EY8"/>
+                <outlet property="spinerAct" destination="FbD-vs-joA" id="haE-Vg-Jiv"/>
             </connections>
             <point key="canvasLocation" x="127.69230769230769" y="-1.066350710900474"/>
         </tableViewCell>

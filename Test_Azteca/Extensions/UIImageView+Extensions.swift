@@ -10,10 +10,10 @@ import UIKit
 
 extension UIImageView {
     
-    func loadFrom(URLAddress: String) {
+    func loadFrom(URLAddress: String, completionHandler: @escaping() -> Void) {
         
         guard let url = URL(string: URLAddress) else {
-           
+            completionHandler()
             return
         }
         
@@ -22,9 +22,13 @@ extension UIImageView {
         }
         
         getData(from: url) { data, response, error in
-            guard let data = data, error == nil else { return }
+            guard let data = data, error == nil else {
+                completionHandler()
+                return
+            }
             DispatchQueue.main.async() { [weak self] in
                 self?.image = UIImage(data: data)
+                completionHandler()
             }
         }
     }
